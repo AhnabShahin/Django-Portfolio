@@ -1,0 +1,46 @@
+
+
+
+/*===================================
+            PORTFOLIO MENU
+=====================================*/
+.port__menu {
+    padding: 22px 30px;
+    margin-bottom: 50px;
+    border-radius: 8px;
+    background: #292742;
+    text-align: center;
+
+    .active {
+        color: $brand__color;
+    
+        &::before {
+            position: absolute;
+            content: "";
+            bottom: -22px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 50px;
+            height: 2px;
+            background: $brand__gradient;
+        }
+    }
+}
+
+.menu {
+    border: none;
+    background: none;
+    margin: 0px 20px;
+    color: $wh__color;
+    text-transform: capitalize;
+    position: relative;
+
+    &:hover {
+        color: $brand__color;
+    }
+
+    &:focus {
+        outline: none;
+    }
+}
+

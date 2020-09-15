@@ -1,0 +1,784 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <!-- BASIC PAGE NEEDS -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shahin Portfolio</title>
+
+    <!--===================================
+               CSS LINK PART STRAT
+    =====================================-->
+    <!-- FOR FONTAWESOME ICON -->
+    <link rel="stylesheet" href="{% static 'portfolioApp/assets/icon/font-awesome/all.min.css' %}">
+
+    <!-- FOR SLICK SLIDER -->
+    <link rel="stylesheet" href="{% static 'portfolioApp/assets/source/css/slick.css' %}">
+
+    <!-- FOR BOOTSTRAP -->
+    <link rel="stylesheet" href="{% static 'portfolioApp/assets/source/css/bootstrap.min.css' %}">
+
+    <!-- FOR TEMPLATE STYLE -->
+    <link rel="stylesheet" href="{% static 'portfolioApp/assets/source/sass/main.css' %}">
+    <!--===================================
+               CSS LINK PART END
+    =====================================-->
+</head>
+<body>
+    <!--===================================
+               SIDEBAR PART START
+    =====================================-->
+    <section class="sidebar__part">
+        <button class="toggle__bar" onclick="toggleBar()">
+            <img src="{% static 'portfolioApp/assets/images/svg/leftbar.svg' %}" alt="leftbar">
+        </button>
+        <div class="sidebar__cover">
+            <div class="container">
+                <div class="row">
+                    <div class="sidebar__profile">
+                        <div class="profile__img">
+                            <a class="img" href="#"><img src="{% static 'portfolioApp/assets/images/proo.jpg' %}" alt="profile"></a>
+                            <a class="icon" href="#"><img src="{% static 'portfolioApp/assets/images/svg/camera.svg' %}" alt="camera"></a>
+                        </div>
+                        <div class="profile__info">
+                            <h3>Shahin alam</h3>
+                            <p>Software Engineer</p>
+                        </div>
+                    </div>
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#particles-js"><i class="fas fa-home"></i> Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fas fa-briefcase"></i> services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#port__part"><i class="fas fa-boxes"></i> portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about__part"><i class="fas fa-file-alt"></i> resume</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fas fa-book-reader"></i> pages</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fas fa-pen-nib"></i> blogs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact__part"><i class="fas fa-paper-plane"></i> contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--===================================
+               SIDEBAR PART END
+    =====================================-->
+
+
+    <!--===================================
+                HEADER PART START
+    =====================================-->
+    <section class="header__part">
+        <div class="container">
+            <div class="row">
+                <div class="header__left">
+                    <form class="header__src" action="" method="">
+                        <button type="submit">
+                            <img src="{% static 'portfolioApp/assets/images/svg/search.svg' %}" alt="search">
+                        </button>
+                        <input type="search" placeholder="Search...">
+                    </form>
+                </div>
+                <div class="header__right">
+                    <a class="btn" href="#"><img src="{% static 'portfolioApp/assets/images/svg/shieldplus.svg' %}" alt="shieldplus"> hire me</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--===================================
+                HEADER PART END
+    =====================================-->
+
+
+    <!--===================================
+                BANNER PART START
+    =====================================-->
+    <section id="particles-js">
+        <div class="banner__part">
+            <div class="container">
+                <div class="banner__content">
+                    <img src="{% static 'portfolioApp/assets/images/proo.jpg' %}" alt="profile">
+                    <h1>C, Python & Java Developer</h1>
+                    <p>Helping develop your business and personal website build with your demand by C, Pathon & Java programming language. You can also see my previous project.</p>
+                    <ul class="banner__icon">
+                        <li><a target="_blank" href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a target="_blank" href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a target="_blank" href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li><a target="_blank" href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a target="_blank" href="#"><i class="fab fa-github"></i></a></li>
+                    </ul>
+                </div>
+                <div class="banner__btn">
+                    <a class="btn" href="#"><img src="{% static 'portfolioApp/assets/images/svg/around.svg' %}" alt="around"> know more</a>
+                    <a class="btn" href="#"><img src="{% static 'portfolioApp/assets/images/svg/box.svg' %}" alt="box"> demo work</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--===================================
+                BANNER PART END
+    =====================================-->
+    
+
+    <main class="main">
+    <!--===================================
+                GMAIL PART START
+    =====================================-->
+    <section id="gmail-part">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <div class="gmail">
+                        <h2>shahinahnab@gmail.com</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--===================================
+                GMAIL PART END
+    =====================================-->
+
+
+    <!--===================================
+                PORTFOLIO PART START
+    =====================================-->
+    <section id="port__part">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-heading">
+                        <div class="heading-content">
+                            <small>my portfolio</small>
+                            <h2>latest projects</h2>
+                        </div>
+                        <div class="heading-describe">
+                            <p>Lorem Ipsum Dolor Sit Amet, Consectetur Adipisicing Elit. Sint Ratione Reprehenderit</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <div class="port__menu">
+                        <button class="menu active" type="button" data-filter="all">all categories</button>
+                        <button class="menu" type="button" data-filter=".contest">contest project</button>
+                        <button class="menu" type="button" data-filter=".practice">practice project</button>
+                        <button class="menu" type="button" data-filter=".office">official project</button>
+                        <button class="menu" type="button" data-filter=".client">client project</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="port-card">
+                        <div class="port-img">
+                            <img src="{% static 'portfolioApp/assets/images/port-1.jpg' %}" alt="port-1">
+                            <div class="port-overlay">
+                                <ul>
+                                    <li><a href="#"><i class="far fa-eye"></i> live preview</a></li>
+                                    <li><a href="#"><i class="fas fa-link"></i> view details</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="port-info">
+                            <h4>office managment</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="port-card">
+                        <div class="port-img">
+                            <img src="{% static 'portfolioApp/assets/images/port-2.jpg' %}" alt="port-2">
+                            <div class="port-overlay">
+                                <ul>
+                                    <li><a href="#"><i class="far fa-eye"></i> live preview</a></li>
+                                    <li><a href="#"><i class="fas fa-link"></i> view details</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="port-info">
+                            <h4>real time chat</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="port-card">
+                        <div class="port-img">
+                            <img src="{% static 'portfolioApp/assets/images/port-3.jpg' %}" alt="port-3">
+                            <div class="port-overlay">
+                                <ul>
+                                    <li><a href="#"><i class="far fa-eye"></i> live preview</a></li>
+                                    <li><a href="#"><i class="fas fa-link"></i> view details</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="port-info">
+                            <h4>shop managment</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="port-card">
+                        <div class="port-img">
+                            <img src="{% static 'portfolioApp/assets/images/port-4.jpg' %}" alt="port-4">
+                            <div class="port-overlay">
+                                <ul>
+                                    <li><a href="#"><i class="far fa-eye"></i> live preview</a></li>
+                                    <li><a href="#"><i class="fas fa-link"></i> view details</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="port-info">
+                            <h4>courier service</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="port-card">
+                        <div class="port-img">
+                            <img src="{% static 'portfolioApp/assets/images/port-5.jpg' %}" alt="port-5">
+                            <div class="port-overlay">
+                                <ul>
+                                    <li><a href="#"><i class="far fa-eye"></i> live preview</a></li>
+                                    <li><a href="#"><i class="fas fa-link"></i> view details</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="port-info">
+                            <h4>E-commerce</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="port-card">
+                        <div class="port-img">
+                            <img src="{% static 'portfolioApp/assets/images/port-6.jpg' %}" alt="port-6">
+                            <div class="port-overlay">
+                                <ul>
+                                    <li><a href="#"><i class="far fa-eye"></i> live preview</a></li>
+                                    <li><a href="#"><i class="fas fa-link"></i> view details</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="port-info">
+                            <h4>Personal blog</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--===================================
+                PORTFOLIO PART END
+    =====================================-->
+
+
+    <!--===================================
+                ABOUT PART START
+    =====================================-->
+    <section id="about__part">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <div class="section-heading">
+                        <div class="heading-content">
+                            <small>about myself</small>
+                            <h2>some basic info</h2>
+                        </div>
+                        <div class="heading-describe">
+                            <p>Lorem Ipsum Dolor Sit Amet, Consectetur Adipisicing Elit. Sint Ratione Reprehenderit</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-7 col-md-12">
+                    <div class="about-content">
+                        <h1>I'm Shahin Alam <span>(Software Engineer)</span></h1>
+                        <p>I’m with broad technical skill-set, very strong attention to detail, and 3 years of experience in front-end web development. Able to multitask and juggle multiple pressing projects simultaneously. On top of the latest trends and technologies. Ability to improvise, troubleshoot, take ownership, and most importantly learn new skills on the job.</p>
+                        <div class="about-list">
+                            <ul>
+                                <li>
+                                    <h5>Birthday :</h5>
+                                    <p>02 Februray 1995</p>
+                                </li>
+                                <li>
+                                    <h5>Lives in :</h5>
+                                    <p>Narayanganj, Bangladesh</p>
+                                </li>
+                                <li>
+                                    <h5>Email :</h5>
+                                    <p>shahinahnab@gmail.com</p>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <h5>Phone :</h5>
+                                    <p>(+880) 1942-565009</p>
+                                </li>
+                                <li>
+                                    <h5>Skype :</h5>
+                                    <p>live:mironhasan018</p>
+                                </li>
+                                <li>
+                                    <h5>Linkedin :</h5>
+                                    <p>/mironmahmud</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="about-btn">
+                            <a class="btn" href="#"><img src="{% static 'portfolioApp/assets/images/svg/download.svg' %}" alt="download"> Download CV</a>
+                            <a class="btn" href="#"><img src="{% static 'portfolioApp/assets/images/svg/headphone.svg' %}" alt="headphone"> Contact Me</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-12">
+                    <div class="about-counter">
+                        <div class="counter-div">
+                            <i class="fas fa-project-diagram"></i>
+                            <h2><span class="counter-number">65</span>+</h2>
+                            <p>Project completed</p>
+                        </div>
+                        <div class="counter-div">
+                            <i class="fab fa-slack-hash"></i>
+                            <h2><span class="counter-number">37</span>+</h2>
+                            <p>Satisfied Clients</p>
+                        </div>
+                        <div class="counter-div">
+                            <i class="fas fa-boxes"></i>
+                            <h2><span class="counter-number">29</span>+</h2>
+                            <p>Project completed</p>
+                        </div>
+                        <div class="counter-div">
+                            <i class="fas fa-layer-group"></i>
+                            <h2><span class="counter-number">82</span>+</h2>
+                            <p>Project completed</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--===================================
+                ABOUT PART END
+    =====================================-->
+
+
+    <!--===================================
+                SKILL PART START
+    =====================================-->
+    <section id="skill-part">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <div class="section-heading">
+                        <div class="heading-content">
+                            <small>my skills</small>
+                            <h2>Software & Tools</h2>
+                        </div>
+                        <div class="heading-describe">
+                            <p>Lorem Ipsum Dolor Sit Amet, Consectetur Adipisicing Elit. Sint Ratione Reprehenderit</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div class="skill-parent">
+                        <div class="skill-child">
+                            <div class="skill-img">
+                                <img src="{% static 'portfolioApp/assets/images/html.png' %}" alt="html">
+                            </div>
+                            <div class="skill-item">
+                                <p>html</p>
+                            </div>
+                        </div>
+                        <div class="skill-child">
+                            <div class="skill-img">
+                                <img src="{% static 'portfolioApp/assets/images/css.png' %}" alt="css">
+                            </div>
+                            <div class="skill-item">
+                                <p>css</p>
+                            </div>
+                        </div>
+                        <div class="skill-child">
+                            <div class="skill-img">
+                                <img src="{% static 'portfolioApp/assets/images/javascript.png' %}" alt="javascript">
+                            </div>
+                            <div class="skill-item">
+                                <p>javascript</p>
+                            </div>
+                        </div>
+                        <div class="skill-child">
+                            <div class="skill-img">
+                                <img src="{% static 'portfolioApp/assets/images/python.png' %}" alt="python">
+                            </div>
+                            <div class="skill-item">
+                                <p>python</p>
+                            </div>
+                        </div>
+                        <div class="skill-child">
+                            <div class="skill-img">
+                                <img src="{% static 'portfolioApp/assets/images/c.png' %}" alt="c">
+                            </div>
+                            <div class="skill-item">
+                                <p>c</p>
+                            </div>
+                        </div>
+                        <div class="skill-child">
+                            <div class="skill-img">
+                                <img src="{% static 'portfolioApp/assets/images/java.png' %}" alt="java">
+                            </div>
+                            <div class="skill-item">
+                                <p>java</p>
+                            </div>
+                        </div>
+                        <div class="skill-child">
+                            <div class="skill-img">
+                                <img src="{% static 'portfolioApp/assets/images/wordpress.png' %}" alt="wordpress">
+                            </div>
+                            <div class="skill-item">
+                                <p>wordpress</p>
+                            </div>
+                        </div>
+                        <div class="skill-child">
+                            <div class="skill-img">
+                                <img src="{% static 'portfolioApp/assets/images/react.png' %}" alt="react">
+                            </div>
+                            <div class="skill-item">
+                                <p>react js</p>
+                            </div>
+                        </div>
+                        <div class="skill-child">
+                            <div class="skill-img">
+                                <img src="{% static 'portfolioApp/assets/images/github.png' %}" alt="github">
+                            </div>
+                            <div class="skill-item">
+                                <p>github</p>
+                            </div>
+                        </div>
+                        <div class="skill-child">
+                            <div class="skill-img">
+                                <img src="{% static 'portfolioApp/assets/images/vscode.png' %}" alt="vscode">
+                            </div>
+                            <div class="skill-item">
+                                <p>vs code</p>
+                            </div>
+                        </div>
+                        <div class="skill-child">
+                            <div class="skill-img">
+                                <img src="{% static 'portfolioApp/assets/images/django.png' %}" alt="django">
+                            </div>
+                            <div class="skill-item">
+                                <p>Django</p>
+                            </div>
+                        </div>
+                        <div class="skill-child">
+                            <div class="skill-img">
+                                <img src="{% static 'portfolioApp/assets/images/nodejs.png' %}" alt="nodejs">
+                            </div>
+                            <div class="skill-item">
+                                <p>nodejs</p>
+                            </div>
+                        </div>
+                        <div class="skill-child">
+                            <div class="skill-img">
+                                <img src="{% static 'portfolioApp/assets/images/git.png' %}" alt="git">
+                            </div>
+                            <div class="skill-item">
+                                <p>git</p>
+                            </div>
+                        </div>
+                        <div class="skill-child">
+                            <div class="skill-img">
+                                <img src="{% static 'portfolioApp/assets/images/bootstrap.png' %}" alt="bootstrap">
+                            </div>
+                            <div class="skill-item">
+                                <p>bootstrap</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--===================================
+                SKILL PART END
+    =====================================-->
+    
+
+    <!--===================================
+                EXPERIENCE PART START
+    =====================================-->
+    <section id="exper-part">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <div class="section-heading">
+                        <div class="heading-content">
+                            <small>my experience</small>
+                            <h2>experience &amp; expertise</h2>
+                        </div>
+                        <div class="heading-describe">
+                            <p>Lorem Ipsum Dolor Sit Amet, Consectetur Adipisicing Elit. Sint Ratione Reprehenderit</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 col-md-6">
+                    <div class="exper-content">
+                        <i class="fas fa-user-tie"></i>
+                        <small>2017 - 2019</small>
+                        <h3>Software Engineer at <span>Joomshaper</span></h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Blanditiis voluptates id quae dolorum quidem.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <div class="exper-content">
+                        <i class="fas fa-user-tie"></i>
+                        <small>2017 - 2019</small>
+                        <h3>Software Engineer at <span>Joomshaper</span></h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Blanditiis voluptates id quae dolorum quidem.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <div class="exper-content">
+                        <i class="fas fa-user-tie"></i>
+                        <small>2017 - 2019</small>
+                        <h3>Software Engineer at <span>Joomshaper</span></h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Blanditiis voluptates id quae dolorum quidem.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <div class="exper-content">
+                        <i class="fas fa-user-tie"></i>
+                        <small>2017 - 2019</small>
+                        <h3>Software Engineer at <span>Joomshaper</span></h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Blanditiis voluptates id quae dolorum quidem.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--===================================
+                EXPERIENCE PART END
+    =====================================-->
+
+
+    <!--===================================
+                EDUCATION PART START
+    =====================================-->
+    <section id="education-part">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <div class="section-heading">
+                        <div class="heading-content">
+                            <small>my Education</small>
+                            <h2>education &amp; qualities</h2>
+                        </div>
+                        <div class="heading-describe">
+                            <p>Lorem Ipsum Dolor Sit Amet, Consectetur Adipisicing Elit. Sint Ratione Reprehenderit</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 col-md-6">
+                    <div class="exper-content">
+                        <i class="fas fa-user-graduate"></i>
+                        <small>2017 - 2019</small>
+                        <h3>C.S.E at <span>University of Asia Pacific</span></h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Blanditiis voluptates id quae dolorum quidem.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <div class="exper-content">
+                        <i class="fas fa-user-graduate"></i>
+                        <small>2017 - 2019</small>
+                        <h3>Software Engineer at <span>Joomshaper</span></h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Blanditiis voluptates id quae dolorum quidem.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <div class="exper-content">
+                        <i class="fas fa-user-graduate"></i>
+                        <small>2017 - 2019</small>
+                        <h3>Software Engineer at <span>Joomshaper</span></h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Blanditiis voluptates id quae dolorum quidem.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <div class="exper-content">
+                        <i class="fas fa-user-graduate"></i>
+                        <small>2017 - 2019</small>
+                        <h3>Software Engineer at <span>Joomshaper</span></h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Blanditiis voluptates id quae dolorum quidem.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--===================================
+                EDUCATION PART END
+    =====================================-->
+
+
+    <!--===================================
+                CONTACT PART START
+    =====================================-->
+    <section id="contact__part">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <div class="section-heading">
+                        <div class="heading-content">
+                            <small>contact me</small>
+                            <h2>any inquery of my</h2>
+                        </div>
+                        <div class="heading-describe">
+                            <p>Lorem Ipsum Dolor Sit Amet, Consectetur Adipisicing Elit. Sint Ratione Reprehenderit</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="contact-info">
+                        <i class="fas fa-envelope"></i>
+                        <ul>
+                            <li><h3>email</h3></li>
+                            <li><p>shahinahnab@gmail.com</p></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="contact-info">
+                        <i class="fas fa-phone-alt"></i>
+                        <ul>
+                            <li><h3>phone</h3></li>
+                            <li><p>+8801838288389</p></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="contact-info">
+                        <i class="fas fa-map-marked-alt"></i>
+                        <ul>
+                            <li><h3>address</h3></li>
+                            <li><p>Narayanganj, Bangladesh</p></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="contact-form">
+                        <form method="POST" >
+                            {% csrf_token %}
+                            <div class="contact-input">
+                                <input type="name" name="name" placeholder="Full name">
+                                <input type="number" name="number" placeholder="Phone number">
+                            </div>
+                            <div class="contact-input">
+                                <input type="text" name="subject" placeholder="main subject">
+                                <input type="email" name="email" placeholder="email address">
+
+                            </div>
+                            <div class="contact-input">
+                                <textarea name="message" placeholder="Your message"></textarea>
+                            </div>
+                            <button type="submit" class="btn">
+                                <i class="fas fa-paper-plane"></i>
+                                send message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--===================================
+                CONTACT PART END
+    =====================================-->
+
+    <!--===================================
+                FOOTER PART START
+    =====================================-->
+    <section id="footer-part">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="footer-content">
+                        <p>Developed by <a href="#">shahin alam</a></p>
+                        <ul class="banner__icon">
+                            <li><a target="_blank" href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a target="_blank" href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a target="_blank" href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                            <li><a target="_blank" href="#"><i class="fab fa-instagram"></i></a></li>
+                            <li><a target="_blank" href="#"><i class="fab fa-github"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--===================================
+                FOOTER PART END
+    =====================================-->
+
+   
+    </main>
+    
+    
+
+    <!--===================================
+                JS LINK PART START
+    =====================================-->
+    <!-- FOR BOOTSTRAP FRAMWORK -->
+    <script src="{% static 'portfolioApp/assets/source/js/jquery-1.12.4.min.js' %}"></script>
+    <script src="{% static 'portfolioApp/assets/source/js/popper.min.js' %}"></script>
+    <script src="{% static 'portfolioApp/assets/source/js/bootstrap.min.js' %}"></script>
+
+    <!-- FOR NICESCROLL PLUGIN -->
+    <script src="{% static 'portfolioApp/assets/source/js/nicescroll.min.js' %}"></script>
+    <script src="{% static 'portfolioApp/assets/source/js/nicescroll.js' %}"></script>
+
+    <!-- FOR PARTICLES PLUGIN -->
+    <script src="{% static 'portfolioApp/assets/source/js/particles.min.js' %}"></script>
+    <script src="{% static 'portfolioApp/assets/source/js/particles.js' %}"></script>
+
+    <!-- FOR SLICK SLDER PLUGIN -->
+    <script src="{% static 'portfolioApp/assets/source/js/slick.min.js' %}"></script>
+    <script src="{% static 'portfolioApp/assets/source/js/slick.js' %}"></script>
+
+    <!-- FOR COUTERUP PLUGIN -->
+    <script src="{% static 'portfolioApp/assets/source/js/waypoints.min.js' %}"></script>
+    <script src="{% static 'portfolioApp/assets/source/js/counterup.min.js' %}"></script>
+    <script src="{% static 'portfolioApp/assets/source/js/counterup.js' %}"></script>
+
+    <!-- FOR MIXITUP PLUGIN -->
+    <script src="{% static 'portfolioApp/assets/source/js/mixitup.min.js' %}"></script>
+    <script src="{% static 'portfolioApp/assets/source/js/mixitup.js' %}"></script>
+
+    <!-- FOR CUSTOMIZABLE -->
+    <script src="{% static 'portfolioApp/assets/source/js/main.js' %}"></script>
+    <!--===================================
+                JS LINK PART END
+    =====================================-->
+</body>
+</html>

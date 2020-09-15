@@ -1,0 +1,20 @@
+
+
+// FOR PHONE DEVICE
+@media (max-width: 575px) {
+    .btn {
+        padding: 10px 25px;
+        font-size: 14px;
+
+        img {
+            height: 18px;
+        }
+    }
+}
+
+@media (min-width: 451px) and (max-width: 767px) {
+    .btn {
+        padding: 12px 25px;
+    }
+}
+

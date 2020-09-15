@@ -1,0 +1,32 @@
+
+
+
+@media (max-width: 575px) {
+    .section-heading {
+        display: inherit;
+        width: 290px;
+        margin: 0 auto 50px;
+    }
+
+    .heading-content {
+        small {
+            font-size: 14px;
+        }
+
+        h2 {
+            margin-bottom: 15px;
+        }
+    }
+
+    .heading-describe {
+        width: 100%;
+        margin-left: 0px;
+    }
+}
+
+
+@media (min-width: 451px) and (max-width: 575px) {
+    .section-heading {
+        width: 370px;
+    }
+}

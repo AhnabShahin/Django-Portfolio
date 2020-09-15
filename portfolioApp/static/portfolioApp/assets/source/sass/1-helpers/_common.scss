@@ -1,0 +1,90 @@
+
+
+/*===================================
+            COMMON CSS PART
+=====================================*/
+* {
+    margin: 0px;
+    padding: 0px;
+    outline: 0px;
+}
+
+img {
+    vertical-align: middle;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ol,
+ul {
+    list-style: none;
+    display: inline-block;
+    margin-bottom: 0px;
+}
+
+span,
+label {
+    margin-bottom: 0px;
+}
+
+button:focus {
+    outline: none;
+}
+
+body {
+    color: #eee;
+    font-size: $sm__size;
+    font-weight: $regular__weight;
+    font-family: $primary__family;
+    background: $body__color;
+    line-height: 28px;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: $wh__color;
+    font-weight: $bold__weight;
+    font-family: $secondary__family;
+    margin-bottom: 0px;
+}
+
+p {
+    margin-bottom: 0px;
+}
+
+h2 {
+    font-size: 35px;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+h4 {
+    font-size: 20px;
+    font-weight: $medium__weight;
+    color: $body__color;
+    text-transform: capitalize;
+}
+
+h5 {
+    font-size: 18px;
+    font-weight: $semi__weight;
+}

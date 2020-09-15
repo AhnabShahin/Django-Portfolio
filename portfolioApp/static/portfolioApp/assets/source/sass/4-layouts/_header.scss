@@ -1,0 +1,29 @@
+
+
+
+/*===================================
+            HEADER PART
+=====================================*/
+.header__part {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 1;
+    @include cursor__transition;
+
+    .container {
+        padding: 30px 45px;
+
+        .row {
+            @include flex__center;
+            justify-content: space-between;
+        }
+    }
+}
+
+.header__left {
+    @include flex__center;
+    justify-content: start;
+    @include cursor__transition;
+}

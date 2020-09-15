@@ -1,0 +1,26 @@
+
+
+
+/*===================================
+            NAVBAR ELEMENT
+=====================================*/
+.navbar-nav {
+    width: 100%;
+    margin: 35px 0px;
+}
+
+.nav-link {
+    color: #b4ffb7;
+    text-transform: capitalize;
+    padding: 14px 0px;
+
+    i {
+        font-size: 18px;
+        padding: 0px 15px 0px 30px;
+    }
+
+    &:hover {
+        color: $brand__color;
+        background: $menu__hover;
+    }
+}

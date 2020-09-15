@@ -1,0 +1,33 @@
+
+
+
+/*===================================
+            FORM ELEMENT
+=====================================*/
+.header__src {
+    width: 220px;
+    height: 40px;
+    border-radius: 8px;
+    background: $menu__hover;
+    @include flex__center;
+    justify-content: start;
+
+    button {
+        border: none;
+        outline: none;
+        background: none;
+        padding: 0px 10px;
+
+        img {
+            width: 20px;
+            height: auto;
+        }
+    }
+
+    input {
+        color: $wh__color;
+        width: 100%;
+        border: none;
+        background: transparent;
+    }
+}

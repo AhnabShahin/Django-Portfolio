@@ -1,0 +1,26 @@
+
+
+
+/*===================================
+            BUTTON ELEMENT
+=====================================*/
+.btn {
+    border: none;
+    padding: 12px 35px;
+    border-radius: 8px;
+    color: $body__color;
+    background: $brand__gradient;
+    font-weight: $medium__weight;
+    text-transform: capitalize;
+
+    img {
+        width: auto;
+        height: 20px;
+        margin: 0px 5px 3px 0px;
+    }
+
+    &:hover {
+        color: $body__color;
+        background: $btn__hover;
+    }
+}

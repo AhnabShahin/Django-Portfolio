@@ -1,0 +1,356 @@
+
+
+
+
+
+@media (max-width: 575px) {
+    // BANNER PART RESPONSIVE
+    .banner__content {
+        img {
+            width: 290px;
+            height: auto;
+            margin: 0 auto 35px;
+        }
+    }
+
+    .banner__content {
+        position: relative;
+        padding-top: 50px;
+
+        h1 {
+            width: 290px;
+            margin: 0 auto 20px;
+        }
+
+        p {
+            width: 100%;
+        }
+    }
+
+    .banner__icon {
+        @include flex__center;
+        top: -30px;
+        right: 50%;
+        transform: translateX(50%);
+
+        li {
+            margin: 0px 8px;
+        }
+    }
+
+    .banner__btn {
+        @include flex__center;
+
+        .btn {
+            padding: 10px 15px;
+    
+            img {
+                height: 16px;
+            }
+        }
+    }
+
+    // GMAIL PART RESPONSIVE
+    .gmail {
+        padding: 40px 0px 50px;
+
+        h2 {
+            font-size: 18px;
+        }
+    }
+
+    // PORTFOLIO PART RESPONSIVE
+    #port__part {
+        padding: 20px 0px 0px;
+    }
+
+    // ABOUT PART RESPONSIVE
+    #about-part {
+        padding: 50px 0px 0px;
+    }
+
+    .about-content {
+        margin-right: 0px;
+        text-align: center;
+
+        span {
+            font-size: 20px;
+        }
+    }
+
+    .about-list {
+        width: 280px;
+        margin: 35px auto 45px;
+        flex-direction: column;
+        align-items: flex-start;
+
+        ul {
+            margin-bottom: 18px;
+        }
+    }
+
+    .about-btn a:first-child {
+        margin-right: 0px;
+        margin-bottom: 20px;
+    }
+
+    .about-counter {
+        margin-top: 25px;
+    }
+
+    .about-counter::before,
+    .about-counter::after {
+        display: none;
+    }
+
+    .counter-div {
+        width: 100%;
+        padding: 20px 0px;
+    }
+
+    // SKILL PART RESPONSIVE
+    #skill-part {
+        padding: 50px 0px 0px;
+    }
+
+    // EXPERIENCE PART RESPONSIVE
+    #exper-part {
+        padding: 60px 0px 0px;
+    }
+
+    .exper-content {
+        padding: 40px;
+    }
+
+
+    // EDUCATION PART RESPONSIVE
+    #education-part {
+        padding: 50px 0px 0px;
+    }
+
+    // CONTACT PART RESPONSIVE
+    #contact-part {
+        padding: 50px 0px 0px;
+    }
+
+    .contact-info {
+        margin-bottom: 30px;
+    }
+
+    .contact-form {
+        margin-top: 0px;
+        padding: 50px 25px;
+        text-align: center;
+
+        .btn {
+            margin-left: 0px;
+        }
+    }
+
+    .contact-input {
+        flex-direction: column;
+
+        input:first-child {
+            margin-bottom: 30px;
+        }
+    }
+
+    // EDUCATION PART RESPONSIVE
+    .footer-content {
+        justify-content: center;
+
+        p {
+            margin-top: 30px;
+        }
+    }
+
+
+}
+
+@media (max-width: 450px) {
+    .skill-child {
+        width: 130px;
+        margin: 7px;
+    }
+
+    .skill-img {
+        img {
+            height: 60px;
+        }
+    }
+}
+
+
+
+@media (min-width: 451px) and (max-width: 575px) {
+    .banner__btn {
+        .btn {
+            padding: 12px 25px;
+        }
+    }
+
+    .gmail {
+        h2 {
+            font-size: 25px;
+        }
+    }
+
+    .port-card {
+        width: 350px;
+        margin: 0 auto 30px;
+    }
+
+    .about-btn a:first-child {
+        margin: 0px 7px;
+    }
+
+    .counter-div {
+        width: 210px;
+    }
+}
+
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .banner__content {
+        p {
+            width: 100%;
+        }
+    }
+
+    .gmail {
+        h2 {
+            font-size: 32px;
+        }
+    }
+
+    .port-card {
+        width: 350px;
+        margin: 0 auto 30px;
+    }
+
+    .about-content {
+        margin-right: 0px;
+        text-align: center;
+
+        h1 {
+            font-size: 30px;
+        }
+
+        span {
+            font-size: 20px;
+        }
+    }
+
+    .about-list {
+        width: 280px;
+        margin: 35px auto 45px;
+        flex-direction: column;
+        align-items: flex-start;
+
+        ul {
+            margin-bottom: 18px;
+        }
+    }
+
+    .about-counter {
+        margin-top: 50px;
+    }
+
+    .skill-child {
+        width: 145px;
+        margin: 8px;
+    }
+
+    .skill-img {
+        img {
+            height: 60px;
+        }
+    }
+
+    #contact-part {
+        padding: 50px 0px 0px;
+    }
+
+    .contact-info {
+        margin-bottom: 30px;
+    }
+
+    .contact-form {
+        margin-top: 0px;
+        padding: 50px 25px;
+        text-align: center;
+
+        .btn {
+            margin-left: 0px;
+        }
+    }
+
+    .contact-input {
+        flex-direction: column;
+
+        input:first-child {
+            margin-bottom: 30px;
+        }
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .about-counter {
+        @include flex__center;
+        justify-content: space-between;
+        margin-top: 30px;
+
+        &::before,
+        &::after {
+            display: none;
+        }
+    }
+
+    .counter-div {
+        width: 165px;
+    }
+
+    #skill-part {
+        padding: 80px 30px 0px;
+    }
+
+    .skill-child {
+        width: 145px;
+        margin: 12px;
+    }
+
+    .skill-img {
+        img {
+            height: 60px;
+        }
+    }
+
+    .contact-info {
+        margin-bottom: 30px;
+    }
+
+    .contact-form {
+        margin-top: 0px;
+    }
+}
+
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .gmail {
+        h2 {
+            font-size: 38px;
+        }
+    }
+
+    .about-counter {
+        &::before,
+        &::after {
+            display: none;
+        }
+    }
+
+    .counter-div {
+        width: 178px;
+    }
+}

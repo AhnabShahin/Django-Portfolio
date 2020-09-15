@@ -1,0 +1,23 @@
+
+#footer-part {
+    padding: 50px 30px;
+}
+
+.footer-content {
+    @include flex__center;
+    justify-content: space-between;
+
+    p {
+        a {
+            color: yellowgreen;
+        }
+    }
+
+    ul {
+        @include flex__center;
+
+        li {
+            margin-left: 10px;
+        }
+    }
+}

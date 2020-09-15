@@ -1,0 +1,40 @@
+
+
+
+@media (max-width: 575px) {
+    .menu {
+        padding: 5px 20px;
+    }
+
+    .menu::before {
+        display: none;
+    }
+}
+
+@media (min-width: 451px) and (max-width: 767px) {
+    .menu {
+        padding: 0px;
+        margin: 7px 15px;
+
+        &::before {
+            display: none;
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .menu {
+        margin: 0px 8px;
+        font-size: 15px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .menu {
+        margin: 10px 25px;
+
+        &::before {
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,30 @@
+
+
+
+/*===================================
+            SECTION HEADING
+=====================================*/
+.section-heading {
+    @include flex__center;
+    margin-bottom: 50px;
+}
+
+.heading-content {
+    small {
+        color: $brand__color;
+        font-size: $sm__size;
+        font-weight: $medium__weight;
+        text-transform: uppercase;
+        margin: 0px 0px 15px 2px;
+    }
+}
+
+.heading-describe {
+    width: 350px;
+    margin-left: 80px;
+    border-left: 3px solid $brand__color;
+
+    p {
+        padding-left: 25px;
+    }
+}

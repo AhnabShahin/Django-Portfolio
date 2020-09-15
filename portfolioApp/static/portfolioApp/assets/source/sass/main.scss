@@ -1,0 +1,107 @@
+
+
+/*===========================================
+
+Author Name : Shahin Alama
+Template Type : Personal Portfolio
+Email : shahinahnab@gmail.com
+Phone : +8801838288389
+Brand Color : #48455a, #fe6347
+Text font : Poppins & Open Sans
+Icon : Flat Icon, Font Awesome
+Version : 1.0.01
+
+---------------------------------------------
+
+## Table of Content index page
+---------------------------------------------
+01. COMMON CSS PART
+02. SIDEBAR PART 
+03. HEADER PART
+04. BANNER PART
+05. GMAIL PART
+06. PORTFOLIO PART
+07. ABOUT PART
+08. SKILL PART
+09. EXPERIENCE PART
+10. EDUCATION PART
+11. CONTACT PART
+12. FOOTER PART
+
+
+## Table of Element 
+---------------------------------------------
+01. BUTTON ELEMENT
+02. FORM ELEMENT
+03. NAVBAR ELEMENT
+04. PORT-MENU ELEMENT
+
+============================================*/
+
+
+
+//======================================
+//         1 - HELPERS FOLDER
+//====================================== 
+@import "./1-helpers/_font.scss";
+@import "./1-helpers/_variable.scss";
+@import "./1-helpers/_mixin.scss";
+@import "1-helpers/_common.scss";
+
+
+//======================================
+//         2 - ELEMENTS FOLDER
+//====================================== 
+@import "./2-elements/_navbar.scss";
+@import "./2-elements/_button.scss";
+@import "./2-elements/_form.scss";
+@import "./2-elements/_input.scss";
+@import "./2-elements/_port-menu.scss"; 
+
+
+//======================================
+//         3 - BASICS FOLDER
+//====================================== 
+@import "./3-basics/_section-heading.scss";
+@import "./3-basics/_portfolio-card.scss";
+
+
+//======================================
+//         4 - LAYOUTS FOLDER
+//====================================== 
+@import "./4-layouts/_sidebar.scss";
+@import "./4-layouts/_header.scss";
+@import "./4-layouts/_contact.scss";
+@import "./4-layouts/_footer.scss";
+
+
+//======================================
+//         5 - PAGES FOLDER
+//====================================== 
+@import "./5-pages/_index.scss";
+
+
+//======================================
+//         6 - RESPONSIVE FOLDER
+//====================================== 
+// all common css
+@import "./6-responsive/_helpers/_common.scss";
+
+// all elements
+@import "./6-responsive/_elements/_form.scss";
+@import "./6-responsive/_elements/_button.scss";
+@import "./6-responsive/_elements/_navbar.scss";
+@import "./6-responsive/_elements/_port-menu.scss";
+
+// all basics
+@import "./6-responsive/_basics/_section-heading.scss";
+@import "./6-responsive/_basics/_portfolio-card.scss";
+
+// all layouts
+@import "./6-responsive/_layouts/_header.scss";
+@import "./6-responsive/_layouts/_sidebar.scss";
+@import "./6-responsive/_layouts/_contact.scss";
+@import "./6-responsive/_layouts/_footer.scss";
+
+// all pages
+@import "./6-responsive/_pages/_index.scss";

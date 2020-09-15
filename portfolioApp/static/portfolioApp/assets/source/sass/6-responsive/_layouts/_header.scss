@@ -1,0 +1,15 @@
+
+// FOR PHONE DEVICE
+@media (max-width: 575px) {
+    .header__part {
+        .container {
+            .row {
+                justify-content: end;
+            }
+        }
+    }
+
+    .header__left {
+        display: none;
+    }
+}

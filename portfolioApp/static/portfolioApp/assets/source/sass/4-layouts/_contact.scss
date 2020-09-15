@@ -1,0 +1,93 @@
+
+
+#contact-part {
+    padding: 112px 30px 0px;
+}
+
+.contact-info {
+    padding: 50px 30px 42px;
+    background: #292742;
+    @include flex__center;
+    border-radius: 8px;
+
+    i {
+        background: -webkit-linear-gradient(#a1eb46, #7dd213);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 40px;
+        margin-right: 25px;
+    }
+
+    h3 {
+        font-weight: 600;
+        text-transform: capitalize;
+        margin-bottom: 3px;
+    }
+}
+
+.contact-form {
+    padding: 50px 35px;
+    background: #292742;
+    border-radius: 8px;
+    margin-top: 30px;
+
+    textarea {
+        width: 100%;
+        height: 250px;
+        border: none;
+        border-radius: 8px;
+        background: #353353;
+        padding: 10px 20px 0px;
+        margin: 0px 15px;
+        color: #fff;
+
+        &::placeholder {
+            font-size: 15px;
+            text-transform: capitalize;
+        }
+    }
+
+    .btn {
+        margin-left: 15px;
+
+        i {
+            margin-right: 5px;
+        }
+    }
+}
+
+.contact-input {
+    @include flex__center;
+    margin-bottom: 30px;
+
+    input {
+        width: 100%;
+        height: 45px;
+        border: none;
+        border-radius: 8px;
+        background: #353353;
+        padding: 0px 20px;
+        margin: 0px 15px;
+        color: #fff;
+
+        &::placeholder {
+            font-size: 15px;
+            text-transform: capitalize;
+        }
+    }
+}
+
+::-webkit-file-upload-button {
+    background: transparent;
+    border: none;
+    color: #717173;
+    text-transform: capitalize;
+    font-size: 15px;
+    margin-top: 8px;
+    cursor: pointer;
+  }
+
+  ::-webkit-file-upload-button:focus {
+      outline: none;
+  }
+
